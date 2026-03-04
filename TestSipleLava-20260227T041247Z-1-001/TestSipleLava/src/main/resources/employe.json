@@ -1,0 +1,14 @@
+{
+  "firstName": "abc",
+  "secondName": "def",
+  "address": [
+    {
+      "street": "kkst",
+      "city" : "com"
+    },
+    {
+      "street": "zzst",
+      "city" : "ch"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beanio xmlns="http://www.beanio.org/2012/03"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            http://www.beanio.org/2012/03
+            http://www.beanio.org/2012/03/mapping.xsd">
+
+    <stream name="userStream" format="csv">
+
+        <!-- HEADER RECORD -->
+        <record name="header" minOccurs="1" maxOccurs="1">
+            <field name="h1"/>
+            <field name="h2"/>
+            <field name="h3"/>
+        </record>
+
+        <!-- DATA RECORD -->
+        <record name="user" class="BeanIO.User">
+            <field name="id"/>
+            <field name="name"/>
+            <field name="email"/>
+        </record>
+
+    </stream>
+</beanio>
